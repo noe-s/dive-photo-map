@@ -8,10 +8,18 @@
     position: absolute;
   }
 
+#marker {
+  background-image: url('./img/icons/marker.png');
+  background-size: cover;
+  width: 30px;
+  height: 45px;
+  cursor: pointer;
+}
+
 .mapboxgl-popup {
-  max-width: 500px;
+  max-width: 350px;
 }
 .mapboxgl-popup-content {
-  max-width: 500px;
-  background: #758db2;
+  max-width: 350px;
+  background: #517c9e;
 }
