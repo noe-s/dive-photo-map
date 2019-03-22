@@ -8,9 +8,10 @@ var map = new mapboxgl.Map({
 });
 map.scrollZoom.disable();
 map.dragPan.disable();
+map.doubleClickZoom.disable();
 //Popups
 var popupBali = new mapboxgl.Popup({anchor: 'bottom', }) 
-  .setHTML('<h4>Photos Taken in Bali, Indonesia</h4>\
+  .setHTML('<h3>Photos Taken in Bali, Indonesia</h3>\
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">\
       <div class="carousel-inner">\
         <div class="carousel-item active">\
@@ -42,7 +43,7 @@ var popupBali = new mapboxgl.Popup({anchor: 'bottom', })
 
 
 var popupGili = new mapboxgl.Popup({anchor: 'bottom', }) 
-  .setHTML('<h4>Photos Taken at Gili Air</h4>\
+  .setHTML('<h3>Photos Taken at Gili Air</h3>\
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">\
       <div class="carousel-inner">\
         <div class="carousel-item active">\
@@ -82,7 +83,7 @@ var popupGili = new mapboxgl.Popup({anchor: 'bottom', })
   );
 
 var popupKomodo = new mapboxgl.Popup({anchor: 'bottom', }) 
-  .setHTML('<h4>Photos Taken in Komodo National Park</h4>\
+  .setHTML('<h3>Photos Taken in Komodo National Park</h3>\
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">\
       <div class="carousel-inner">\
         <div class="carousel-item active">\
@@ -127,15 +128,12 @@ var popupKomodo = new mapboxgl.Popup({anchor: 'bottom', })
     </div>'
   );
 
-  var popupWangi = new mapboxgl.Popup({anchor: 'right', }) 
-  .setHTML('<h4>Photos Taken at Wangi Wangi (Sulawesi)</h4>\
+  var popupWangi = new mapboxgl.Popup({anchor: 'right', closeOnEscapeKey: true}) 
+  .setHTML('<h3>Photos Taken at Wangi Wangi (Sulawesi)</h3>\
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">\
       <div class="carousel-inner">\
         <div class="carousel-item active">\
           <img class="d-block w-100" src="img/Wangi-Wangi/nudi.jpg">\
-        </div>\
-        <div class="carousel-item">\
-          <img class="d-block w-100" src="img/Wangi-Wangi/scorpion.jpg">\
         </div>\
         <div class="carousel-item">\
           <img class="d-block w-100" src="img/Wangi-Wangi/orangutan.jpg">\
