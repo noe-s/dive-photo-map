@@ -8,8 +8,8 @@
     position: absolute;
   }
 
-#marker {
-  background-image: url('./img/icons/marker.png');
+.marker {
+  background-image: url('./img/diveMarker.png');
   background-size: cover;
   width: 30px;
   height: 45px;
